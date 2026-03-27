@@ -1,0 +1,126 @@
+{
+  "currencySymbol": "INR ",
+  "categories": [
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "items": [
+        {
+          "id": "pizza-margherita",
+          "name": "Margherita Pizza",
+          "category": "Pizza",
+          "price": 299000,
+          "person": "1-2",
+          "image": "https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "Classic cheese pizza with tomato basil sauce.",
+          "isAvailable": true,
+          "isVeg": true
+        },
+        {
+          "id": "pizza-farmhouse",
+          "name": "Farmhouse Pizza",
+          "category": "Pizza",
+          "price": 399,
+          "person": "2-3",
+          "image": "assets/images/menu/pizza-farmhouse.jpg",
+          "description": "Loaded with fresh veggies and mozzarella.",
+          "isAvailable": true,
+          "isVeg": true
+        }
+      ]
+    },
+    {
+      "id": "burger",
+      "name": "Burger",
+      "items": [
+        {
+          "id": "burger-chicken",
+          "name": "Chicken Burger",
+          "category": "Burger",
+          "price": 199,
+          "person": "1",
+          "image": "assets/images/menu/burger-chicken.jpg",
+          "description": "Crispy chicken patty burger with house sauce.",
+          "isAvailable": true,
+          "isVeg": false
+        }
+      ]
+    },
+    {
+      "id": "calzone",
+      "name": "Calzone",
+      "items": [
+        {
+          "id": "calzone-margherita",
+          "name": "Margherita Calzone",
+          "category": "Calzone",
+          "price": 29900,
+          "person": "1-2",
+          "image": "assets/images/menu/calzone-margherita.jpg",
+          "description": "Classic cheese pizza wrapped in a calzone.",
+          "isAvailable": true,
+          "isVeg": true
+        },
+        {
+          "id": "calzone-farmhouse",
+          "name": "Farmhouse Calzone",
+          "category": "Calzone",
+          "price": 399,
+          "person": "2-3",
+          "image": "assets/images/menu/calzone-farmhouse.jpg",
+          "description": "Loaded with fresh veggies and mozzarella wrapped in a calzone.",
+          "isAvailable": true,
+          "isVeg": true
+        },
+        {
+          "id": "calzone-chicken",
+          "name": "Chicken Calzone",
+          "category": "Calzone",
+          "price": 499,
+          "person": "1",
+          "image": "assets/images/menu/calzone-chicken.jpg",
+          "description": "Crispy chicken patty wrapped in a calzone.",
+          "isAvailable": true,
+          "isVeg": false
+        }
+      ]
+    },
+    {
+      "id": "wraps",
+      "name": "Wraps",
+      "items": []
+    },
+    {
+      "id": "shawarma",
+      "name": "Shawarma",
+      "items": []
+    },
+    {
+      "id": "chips",
+      "name": "Chips",
+      "items": []
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "items": [
+        {
+          "id": "drink-oreo-shake",
+          "name": "Oreo Shake",
+          "category": "Drinks",
+          "price": 199,
+          "person": "1",
+          "image": "assets/images/menu/drink-oreo-shake.jpg",
+          "description": "Thick Oreo shake topped with cream.",
+          "isAvailable": true,
+          "isVeg": true
+        }
+      ]
+    },
+    {
+      "id": "chicken-fried-rice",
+      "name": "Chicken Fried Rice",
+      "items": []
+    }
+  ]
+}

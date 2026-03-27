@@ -27,6 +27,33 @@
     return symbol + Number(value || 0);
   }
 
+  function loadJson(url) {
+    return fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error("Failed to load JSON");
+        return res.json();
+      })
+      .catch(function () {
+        return new Promise(function (resolve, reject) {
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", url, true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState !== 4) return;
+            if (xhr.status >= 200 && xhr.status < 300) {
+              try {
+                resolve(JSON.parse(xhr.responseText));
+              } catch (err) {
+                reject(err);
+              }
+            } else {
+              reject(new Error("XHR failed"));
+            }
+          };
+          xhr.send();
+        });
+      });
+  }
+
   function filteredItems() {
     var items = flattenItems(state.menuData);
     return items.filter(function (item) {
@@ -287,6 +314,7 @@
     items.forEach(function (item) {
       var col = document.createElement("div");
       col.className = "col-md-6 col-lg-4 mb-4";
+      var personText = item.person ? "<p><small>Serves: " + item.person + "</small></p>" : "";
       col.innerHTML =
         '<div class="popular_dish_item h-100">' +
         '  <div class="img"><img src="' +
@@ -301,6 +329,7 @@
         "    <p>" +
         (item.description || "") +
         "</p>" +
+        personText +
         "    <p><strong>" +
         formatPrice(item.price) +
         "</strong></p>" +
@@ -364,76 +393,19 @@
     updateCartCount();
     updateCheckoutTotals();
 
-    state.menuData = {
-      categories: [
-        {
-          id: "pizza",
-          name: "Pizza",
-          items: [
-            {
-              id: "pizza-margherita",
-              name: "Margherita Pizza",
-              category: "Pizza",
-              price: 299,
-              image: "assets/images/menu/pizza-margherita.jpg",
-              description: "Classic cheese pizza with tomato basil sauce.",
-              isAvailable: true,
-              isVeg: true
-            },
-            {
-              id: "pizza-farmhouse",
-              name: "Farmhouse Pizza",
-              category: "Pizza",
-              price: 399,
-              image: "assets/images/menu/pizza-farmhouse.jpg",
-              description: "Loaded with fresh veggies and mozzarella.",
-              isAvailable: true,
-              isVeg: true
-            }
-          ]
-        },
-        {
-          id: "burger",
-          name: "Burger",
-          items: [
-            {
-              id: "burger-chicken",
-              name: "Chicken Burger",
-              category: "Burger",
-              price: 199,
-              image: "assets/images/menu/burger-chicken.jpg",
-              description: "Crispy chicken patty burger with house sauce.",
-              isAvailable: true,
-              isVeg: false
-            }
-          ]
-        },
-        { id: "calzone", name: "Calzone", items: [] },
-        { id: "wraps", name: "Wraps", items: [] },
-        { id: "shawarma", name: "Shawarma", items: [] },
-        { id: "chips", name: "Chips", items: [] },
-        {
-          id: "drinks",
-          name: "Drinks",
-          items: [
-            {
-              id: "drink-oreo-shake",
-              name: "Oreo Shake",
-              category: "Drinks",
-              price: 199,
-              image: "assets/images/menu/drink-oreo-shake.jpg",
-              description: "Thick Oreo shake topped with cream.",
-              isAvailable: true,
-              isVeg: true
-            }
-          ]
-        },
-        { id: "chicken-fried-rice", name: "Chicken Fried Rice", items: [] }
-      ]
-    };
-
-    bindSearch();
-    render();
+    loadJson("data/menu.json")
+      .then(function (data) {
+        state.menuData = data || { categories: [] };
+        bindSearch();
+        render();
+      })
+      .catch(function () {
+        var container = document.getElementById("menuListContainer");
+        if (container) {
+          container.innerHTML =
+            '<div class="col-12 text-center"><p>Unable to load menu right now.</p></div>';
+        }
+      });
   }
 
   document.addEventListener("DOMContentLoaded", init);
