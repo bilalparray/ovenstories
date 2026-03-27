@@ -54,20 +54,21 @@
     col.className = "col-lg-6 col-md-12";
     var servesLine = item.person ? '<p><small>Serves: ' + item.person + "</small></p>" : "";
     var badge = item.isAvailable ? "POPULAR" : "UNAVAILABLE";
+    var productUrl = "product.html?id=" + encodeURIComponent(item.id);
     col.innerHTML =
-      '<div class="dish_box">' +
+      '<div class="dish_box" data-product-url="' + productUrl + '">' +
       '  <span class="new">' + badge + "</span>" +
       '  <div class="dish_info">' +
       '    <div class="dish_img">' +
-      '      <img src="' + (item.image || "images/dish_01.webp") + '" alt="' + item.name + '" />' +
+      '      <a href="' + productUrl + '"><img src="' + (item.image || "images/dish_01.webp") + '" alt="' + item.name + '" /></a>' +
       "    </div>" +
       '    <div class="dish_text">' +
-      "      <h3>" + item.name + "</h3>" +
+      '      <h3><a href="' + productUrl + '">' + item.name + "</a></h3>" +
       "      <p>" + (item.description || "") + "</p>" +
       servesLine +
       '      <div class="price_cart">' +
       '        <span class="price">' + formatPrice(item.price) + "</span>" +
-      '        <a href="menu.html">' +
+      '        <a href="' + productUrl + '">' +
       '          <span class="cart_btn"><i class="icofont-arrow-right"></i></span>' +
       "        </a>" +
       "      </div>" +
@@ -127,6 +128,14 @@
       var isActive = index === 0;
       tabs.appendChild(createTabLink(category.id, category.name, isActive));
       content.appendChild(createTabPane(category, isActive));
+    });
+
+    content.querySelectorAll("[data-product-url]").forEach(function (card) {
+      card.addEventListener("click", function (event) {
+        if (event.target.closest("a")) return;
+        var url = card.getAttribute("data-product-url");
+        if (url) window.location.href = url;
+      });
     });
   }
 

@@ -315,17 +315,18 @@
       var col = document.createElement("div");
       col.className = "col-md-6 col-lg-4 mb-4";
       var personText = item.person ? "<p><small>Serves: " + item.person + "</small></p>" : "";
+      var productUrl = "product.html?id=" + encodeURIComponent(item.id);
       col.innerHTML =
-        '<div class="popular_dish_item h-100">' +
-        '  <div class="img"><img src="' +
+        '<div class="popular_dish_item h-100" data-product-url="' + productUrl + '">' +
+        '  <div class="img"><a href="' + productUrl + '"><img src="' +
         (item.image || "images/menulistSub_01.png") +
         '" alt="' +
         item.name +
-        '"></div>' +
+        '"></a></div>' +
         '  <div class="text">' +
-        "    <h3>" +
+        '    <h3><a href="' + productUrl + '">' +
         item.name +
-        "</h3>" +
+        "</a></h3>" +
         "    <p>" +
         (item.description || "") +
         "</p>" +
@@ -346,6 +347,14 @@
         "  </div>" +
         "</div>";
       container.appendChild(col);
+    });
+
+    container.querySelectorAll("[data-product-url]").forEach(function (card) {
+      card.addEventListener("click", function (event) {
+        if (event.target.closest("button")) return;
+        var url = card.getAttribute("data-product-url");
+        if (url) window.location.href = url;
+      });
     });
 
     container.querySelectorAll("[data-item-id]").forEach(function (button) {
