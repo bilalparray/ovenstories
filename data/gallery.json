@@ -1,0 +1,36 @@
+{
+  "title": "Oven Stories Gallery",
+  "description": "Moments from our kitchen, menu items, and happy customers.",
+  "items": [
+    {
+      "id": "gallery-001",
+      "title": "Signature Pizza",
+      "image": "images/abtgallery_01_big.webp",
+      "thumb": "images/abtgallery_01.webp",
+      "alt": "Oven Stories signature pizza",
+      "source": "instagram",
+      "sourceUrl": "https://www.instagram.com/_ovenstories/?hl=en",
+      "isActive": true
+    },
+    {
+      "id": "gallery-002",
+      "title": "Burger Combo",
+      "image": "images/abtgallery_02_big.webp",
+      "thumb": "images/abtgallery_02.webp",
+      "alt": "Oven Stories burger combo",
+      "source": "instagram",
+      "sourceUrl": "https://www.instagram.com/_ovenstories/?hl=en",
+      "isActive": true
+    },
+    {
+      "id": "gallery-003",
+      "title": "Oreo Shake",
+      "image": "images/abtgallery_03_big.webp",
+      "thumb": "images/abtgallery_03.webp",
+      "alt": "Oven Stories Oreo shake",
+      "source": "instagram",
+      "sourceUrl": "https://www.instagram.com/_ovenstories/?hl=en",
+      "isActive": true
+    }
+  ]
+}

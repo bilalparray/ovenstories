@@ -39,7 +39,7 @@
           xhr.open("GET", url, true);
           xhr.onreadystatechange = function () {
             if (xhr.readyState !== 4) return;
-            if (xhr.status >= 200 && xhr.status < 300) {
+            if ((xhr.status >= 200 && xhr.status < 300) || (xhr.status === 0 && xhr.responseText)) {
               try {
                 resolve(JSON.parse(xhr.responseText));
               } catch (err) {
