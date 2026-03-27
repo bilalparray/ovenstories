@@ -171,7 +171,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2026 Oven Stories. All Rights Reserved."
+    "copyright": "© 2026 Oven Stories. All Rights Reserved. Powered by <a href=\"https://qayham.com\" target=\"_blank\" rel=\"noopener noreferrer\">qayham.com</a>"
   },
   "labels": {
     "nav": {
@@ -203,5 +203,5 @@
       "checkoutLead": "Review cart items, fill your details, and place your order."
     }
   },
-  "footerHtml": "© 2026 Oven Stories. All Rights Reserved."
+  "footerHtml": "© 2026 Oven Stories. All Rights Reserved. Powered by <a href=\"https://qayham.com\" target=\"_blank\" rel=\"noopener noreferrer\">qayham.com</a>"
 }
