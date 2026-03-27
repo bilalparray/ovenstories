@@ -8,6 +8,7 @@ Frozen scope date: 2026-03-27
 Project: Oven Stories MVP (WhatsApp ordering)
 
 MVP pages (only)
+
 - index.html (Home)
 - menu.html (Menu + add to cart)
 - contact.html (Contact + map + CTA)
@@ -15,6 +16,7 @@ MVP pages (only)
 - gallery.html (Gallery)
 
 Template page mapping
+
 - index.html -> index.html
 - menu.html -> menu.html
 - contact.html -> contact.html
@@ -22,6 +24,7 @@ Template page mapping
 - gallery.html -> gallery.html
 
 Out of MVP scope (Phase 1)
+
 - menu-list-2.html
 - menu-list-3.html
 - reservation-v1.html
@@ -31,6 +34,7 @@ Out of MVP scope (Phase 1)
 - reviews.html
 
 Frozen business config (for Phase 1)
+
 - WhatsApp number: +91 9796662338
 - Contact phone: +91 9796662338
 - Email: care@ovenstories.in
@@ -39,6 +43,7 @@ Frozen business config (for Phase 1)
 - Free delivery rule: up to 5 km for orders above 499
 
 Frozen menu categories (Phase 1)
+
 - Pizza
 - Burger
 - Calzone
@@ -54,7 +59,7 @@ assets/ (images, icons)
 data/menu.json
 js/app.js, js/cart.js, js/whatsapp.js
 Set global config file for business info (phone, address, timings, free-delivery text).
-Step 2: Rebrand Template to Oven Stories (Day 1–2)
+Step 2: Rebrand Template to Oven Stories
 Replace logo, colors, typography, hero copy, CTA text.
 Update all sections with real Oven Stories content:
 Best sellers
