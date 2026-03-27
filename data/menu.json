@@ -1,0 +1,88 @@
+{
+  "currencySymbol": "INR ",
+  "categories": [
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "items": [
+        {
+          "id": "pizza-margherita",
+          "name": "Margherita Pizza",
+          "category": "Pizza",
+          "price": 299,
+          "image": "assets/images/menu/pizza-margherita.jpg",
+          "description": "Classic cheese pizza with tomato basil sauce.",
+          "isAvailable": true,
+          "isVeg": true
+        },
+        {
+          "id": "pizza-farmhouse",
+          "name": "Farmhouse Pizza",
+          "category": "Pizza",
+          "price": 399,
+          "image": "assets/images/menu/pizza-farmhouse.jpg",
+          "description": "Loaded with fresh veggies and mozzarella.",
+          "isAvailable": true,
+          "isVeg": true
+        }
+      ]
+    },
+    {
+      "id": "burger",
+      "name": "Burger",
+      "items": [
+        {
+          "id": "burger-chicken",
+          "name": "Chicken Burger",
+          "category": "Burger",
+          "price": 199,
+          "image": "assets/images/menu/burger-chicken.jpg",
+          "description": "Crispy chicken patty burger with house sauce.",
+          "isAvailable": true,
+          "isVeg": false
+        }
+      ]
+    },
+    {
+      "id": "calzone",
+      "name": "Calzone",
+      "items": []
+    },
+    {
+      "id": "wraps",
+      "name": "Wraps",
+      "items": []
+    },
+    {
+      "id": "shawarma",
+      "name": "Shawarma",
+      "items": []
+    },
+    {
+      "id": "chips",
+      "name": "Chips",
+      "items": []
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "items": [
+        {
+          "id": "drink-oreo-shake",
+          "name": "Oreo Shake",
+          "category": "Drinks",
+          "price": 199,
+          "image": "assets/images/menu/drink-oreo-shake.jpg",
+          "description": "Thick Oreo shake topped with cream.",
+          "isAvailable": true,
+          "isVeg": true
+        }
+      ]
+    },
+    {
+      "id": "chicken-fried-rice",
+      "name": "Chicken Fried Rice",
+      "items": []
+    }
+  ]
+}

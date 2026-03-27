@@ -1,0 +1,46 @@
+{
+  "project": "Oven Stories MVP",
+  "frozen_on": "2026-03-27",
+  "mvp_pages": [
+    "index.html",
+    "menu.html",
+    "contact.html",
+    "about.html",
+    "gallery.html"
+  ],
+  "template_page_mapping": {
+    "index.html": "index.html",
+    "menu.html": "menu.html",
+    "contact.html": "contact.html",
+    "about.html": "about.html",
+    "gallery.html": "gallery.html"
+  },
+  "phase1_excluded_pages": [
+    "menu-list-2.html",
+    "menu-list-3.html",
+    "reservation-v1.html",
+    "blog-list.html",
+    "blog-detail.html",
+    "our-chef.html",
+    "reviews.html"
+  ],
+  "business": {
+    "brand_name": "Oven Stories",
+    "whatsapp_number": "919796662338",
+    "display_phone": "+91 9796662338",
+    "email": "care@ovenstories.in",
+    "address": "Mustafa Abad, HMT-190012, Srinagar, Jammu and Kashmir",
+    "hours": "Monday-Sunday, 10:00 AM - 10:00 PM",
+    "delivery_rule": "Free delivery up to 5 km for orders above 499"
+  },
+  "categories": [
+    "Pizza",
+    "Burger",
+    "Calzone",
+    "Wraps",
+    "Shawarma",
+    "Chips",
+    "Drinks",
+    "Chicken Fried Rice"
+  ]
+}
