@@ -510,7 +510,7 @@ header.fixed::before {
 }
 
 header .navbar-brand img {
-  max-width: 100px;
+  max-width: 50px;
   width: auto;
   height: auto;
 }
