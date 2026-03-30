@@ -3460,10 +3460,17 @@ iframe#youtubevideo {
   position: relative;
 }
 
-.our_menu_section .right_side {
+.our_menu_section .side_shape {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
+  max-width: 20vw;
+}
+
+.our_menu_section .right_side {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .our_menu_section .nav-tabs {
