@@ -509,6 +509,12 @@ header.fixed::before {
   transition: 0.4s all;
 }
 
+header .navbar-brand img {
+  max-width: 100px;
+  width: auto;
+  height: auto;
+}
+
 .navbar-expand-lg .navbar-nav {
   align-items: center;
 }
@@ -1541,7 +1547,8 @@ header.fixed::before {
 
 .bredcrumb_section.gallery_banner {
   position: relative;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/gallery_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1595,7 +1602,8 @@ header.fixed::before {
 
 .bredcrumb_section.review_banner {
   position: relative;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/review_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -2084,7 +2092,8 @@ footer .copy_right a {
 .bredcrumb_section.reservationpage_bg {
   position: relative;
   padding: 100px 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/reservation_bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -2102,7 +2111,8 @@ footer .copy_right a {
 
 .bredcrumb_section.reservation_banner {
   position: relative;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/reservation_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -2203,7 +2213,8 @@ iframe#youtubevideo {
   padding-bottom: 150px;
   position: relative;
 
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../images/about_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -2564,7 +2575,8 @@ iframe#youtubevideo {
 
 .bredcrumb_section.chef_banner {
   position: relative;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/chef_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -2758,7 +2770,8 @@ iframe#youtubevideo {
 /* -----------------Menu List Section Start----------- */
 .bredcrumb_section.menu_list {
   position: relative;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/menulist_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -3086,7 +3099,8 @@ iframe#youtubevideo {
 
 .bredcrumb_section.contact_banner {
   position: relative;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/contact_banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -3943,7 +3957,8 @@ iframe#youtubevideo {
 
 /* ------Testimonial Section Start--------- */
 .testimonial_section {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/testimonial_bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
