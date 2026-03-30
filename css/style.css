@@ -936,6 +936,10 @@ header .navbar-brand img {
   margin-bottom: 45px;
 }
 
+.right_sidemenu .tab_img {
+  display: none;
+}
+
 .right_sidemenu .contact_listing .sub_title {
   font-family: var(--font-rowdies);
   font-size: 18px;
