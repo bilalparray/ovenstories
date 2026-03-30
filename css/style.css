@@ -1875,11 +1875,13 @@ footer .offer_block .form-group {
 
 footer .offer_block .form-group .icon {
   position: absolute;
-  top: 52%;
+  top: 50%;
   left: 20px;
   transform: translateY(-50%);
   font-size: 14px;
   color: var(--text-grey);
+  z-index: 1;
+  pointer-events: none;
 }
 
 footer .offer_block .form-group .form-control {
@@ -1890,9 +1892,10 @@ footer .offer_block .form-group .form-control {
   border-radius: 12px;
   color: var(--text-grey);
   font-weight: 600;
-  padding-left: 35px;
+  padding: 0 175px 0 40px;
   font-size: 14px;
-  padding-right: 175px;
+  line-height: 58px;
+  box-sizing: border-box;
 }
 
 footer .offer_block .form-group .form-control::placeholder {
@@ -1903,9 +1906,17 @@ footer .offer_block .form-group .btn {
   position: absolute;
   right: 3px;
   top: 3px;
-  padding: 0;
+  bottom: 3px;
   width: 175px;
-  height: calc(100% - 6px);
+  height: auto;
+  min-height: 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  box-sizing: border-box;
 }
 
 footer .social_media li {
