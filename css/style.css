@@ -4359,9 +4359,10 @@ iframe#youtubevideo {
 
 .banner_card_section .blog_card .img {
   width: 100%;
-  height: auto;
+  height: 220px;
   display: block;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .banner_card_section .blog_card .img img {
